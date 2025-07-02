@@ -3,7 +3,7 @@ const movies = {
     movie1: {
         title: "Filme Aventura",
         description: "Uma aventura épica por terras desconhecidas.",
-        image: "https://via.placeholder.com/300x450"
+        image: "https://via.placeholder.com/300x450 "
     },
     movie2: {
         title: "Série Mistério",
