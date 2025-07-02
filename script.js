@@ -1,31 +1,36 @@
-// Dados dos filmes e séries
+// Dados dos filmes
 const movies = {
     movie1: {
         title: "Filme Aventura",
         description: "Uma aventura épica por terras desconhecidas.",
-        image: "https://via.placeholder.com/200x300"
+        image: "https://via.placeholder.com/300x450"
     },
     movie2: {
         title: "Série Mistério",
         description: "Mistérios e reviravoltas em cada episódio.",
-        image: "https://via.placeholder.com/200x300"
+        image: "https://via.placeholder.com/300x450"
     },
     movie3: {
         title: "Filme de Terror",
         description: "Uma história assustadora que vai te deixar sem fôlego.",
-        image: "https://via.placeholder.com/200x300"
+        image: "https://via.placeholder.com/300x450"
+    },
+    movie4: {
+        title: "Ação Radical",
+        description: "Ação sem parar com cenas de tirar o fôlego.",
+        image: "https://via.placeholder.com/300x450"
     }
 };
 
-// Função para mostrar detalhes
-function showDetails(movieId) {
+// Função para mostrar os detalhes do filme
+function showMovieDetails(movieId) {
     const movie = movies[movieId];
 
     document.getElementById('movieTitle').innerText = movie.title;
     document.getElementById('movieDescription').innerText = movie.description;
     document.getElementById('movieImage').src = movie.image;
-    
-    // Exibe o detalhe
+
+    // Exibe os detalhes do filme
     document.getElementById('movieDetails').style.display = 'block';
 }
 
